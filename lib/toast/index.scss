@@ -1,0 +1,80 @@
+
+
+.xl-toast_container_box {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  text-align: center;
+  .box{
+    display: inline-block;
+    .item{
+      margin-top: 20px;
+      padding-right: 40px;
+      padding-left: 10px;
+      display: flex;
+      border-radius: 10px;
+      &.item-error{
+        background: #FDF2F0;
+        border: 1px solid rgba(242, 167, 161,1);
+      }
+      &.item-success{
+        background: #F8FEEF;
+        border: 1px solid rgba(194, 233, 153,1);
+      }
+      &.item-warn{
+        background: #FEFBE8;
+        border: 1px solid rgba(251, 229, 154,1);
+      }
+      &.item-tips{
+        background: #E9F7FE;
+        border: 1px solid rgba(159, 212, 251,1);
+      }
+      .icon{
+        height: 60px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .info{
+        flex: 1;
+        text-align: left;
+        padding-top: 15px;
+        h4{
+          font-size: 20px;
+          color: #444;
+          line-height: 1.5;
+          &~p{
+            font-size: 14px;
+            padding-top: 3px;
+          }
+        }
+        p{
+          color: #666;
+          padding-bottom: 20px;
+          font-size: 16px;
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+.example-toast-enter {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.example-toast-enter.example-toast-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 200ms ease;
+}

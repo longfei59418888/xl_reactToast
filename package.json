@@ -1,0 +1,18 @@
+{
+  "name": "xl_reactToast",
+  "version": "1.0.1",
+  "description": "react 的toast信息提示",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/xl_reactToast.js",
+  "author": "xiaolong",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-transition-group": "1.2.1"
+  }
+}
